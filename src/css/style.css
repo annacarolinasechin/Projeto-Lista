@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    padding: 0; /*espaçamento interno no geral*/
+    margin: 0; /* espaçamento externo, uma margem mesmo*/
+    box-sizing: border-box; /*como a largura e a altura são calculados*/
+    font-family: Inter;
+}
+
+body{
+    display: flex; /* alinha todos os elementos do display*/
+    flex-direction: column; /* tudo numa coluna*/
+    justify-content: center; /* tudo "justificado", alinhado*/
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    gap: 3rem;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.list-container {
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    height: 450px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px #00000030; /*eixo x da sombra, eixo y, ---, cor da sombra (quanto mais zeros, menor a opacidade). */
+
+}
+
+.list-box-container{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.list-box{
+    
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 15px; /*arredonda as bordas*/
+}
+
+.list-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px; /* mede o espaçamento de cima e debaixo; mede o espaçamento das laterais. */
+    border: 1px solid #0084FF; /* define espessura; "tipo"; cor. */ 
+    border-radius: 15px 15px 0 0; /* é preciso determinar "cada" borda individualmente (portanto: borda superior esquerda-direita; borda inferior esquerda-direita */
+}
+
+h2{
+    font-size: 15px;
+}
+
+.date-text{
+    margin-right: 50%;
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+span{
+    font-size: 15px;
+}
+
+button{
+    background-color: #0084FF;
+    border-radius: 5px;
+    border: none; /*nenhuma borda né*/
+    font-size: 15px;
+    padding: 5px;
+    color: #FFF;
+    transition: .1s;
+}
+
+button:hover{
+    background-color: #006ED5;
+}
+
+button:active{
+    background-color: #0084FF;
+}
+
+.list-button{
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+.list-footer{
+    background-color: #FFF;
+    padding: 10px 15px;
+    border-radius: 0 0 20px 20px;
+}
