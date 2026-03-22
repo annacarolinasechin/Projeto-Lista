@@ -15,6 +15,7 @@ body{
     min-height: 100vh;
     margin: 0;
     gap: 3rem;
+    padding: 20px;
 }
 
 h1{
@@ -25,7 +26,8 @@ h1{
     background-color: #F5F5F5;
     border-radius: 20px;
     height: 450px;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 10px #00000030; /*eixo x da sombra, eixo y, ---, cor da sombra (quanto mais zeros, menor a opacidade). */
@@ -100,3 +102,37 @@ button:active{
     padding: 10px 15px;
     border-radius: 0 0 20px 20px;
 }
+
+@media (max-width: 768px){
+    h1{
+        font-size: 30px;
+    }
+    .list-container{
+        height: 350px;
+    }
+    .list-box-container{
+        padding: 10px;
+    }
+    .list-header{
+        padding: 5px 10px;
+        border-radius: 10px 10px 0 0;
+    }
+    h2{
+        font-size: 12px;
+    }
+    span{
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+
+    .list-button{
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+    .list-footer{
+        padding: 7.5px 10px;
+    }
+}   
