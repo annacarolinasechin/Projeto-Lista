@@ -16,4 +16,17 @@ function addItem(_nome, _data){
     listBox.append(newItem);
 }
 
-addItem(listItems[0].nome, listItems[0].data)
+addItem(listItems[0].nome, listItems[0].data);
+
+function Item(_nome, _data) {
+    this.nome = _nome;
+    this.data = _data;
+}
+
+function newItem(){
+    const _nome = prompt("Digite o nome do item");
+    const _data = prompt("Digite a data do item");
+    const item = new Item(_nome, _data);
+    listItems.push(item);
+    addItem(_nome, _data);
+}
